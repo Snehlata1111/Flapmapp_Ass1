@@ -1,0 +1,26 @@
+Mini Solar System Visualization - Task Summary
+============================================
+
+1. Render a simple solar system scene:
+   - A static Sun is rendered at the center using a yellow circle.
+   - Two planets orbit the Sun at different speeds and distances, animated using time-based transformations.
+   - One planet has a moon that orbits it, also animated.
+
+2. Implement custom shaders:
+   - All shaders are written in GLSL and embedded in the code.
+   - The Sun uses a custom fragment shader for a glow and pulsing effect based on time.
+   - Planets and moon use a fragment shader with a radial gradient for simple visual variety.
+
+3. Apply transformations:
+   - Matrix transformations (scale, rotation, translation) are used for all objects.
+   - Planets and moon orbit using translation, and rotate on their own axes using rotation matrices.
+
+4. User interaction:
+   - Camera controls allow rotating the view with mouse drag (left button).
+   - Zoom in/out is supported with the mouse scroll wheel.
+   - All transformations are applied via a view matrix.
+
+5. Performance:
+   - The application uses a single VAO and VBO for all circle geometry.
+   - Rendering is efficient, with no per-frame geometry uploads.
+   - The application runs smoothly and meets the 30 FPS or higher requirement.

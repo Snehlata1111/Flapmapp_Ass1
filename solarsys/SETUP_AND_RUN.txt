@@ -1,0 +1,37 @@
+Mini Solar System - Setup & Run Instructions
+===========================================
+
+**Requirements:**
+- Windows OS
+- CMake (version 3.14 or higher)
+- A C++ compiler (Visual Studio recommended)
+- Git (for CMake FetchContent)
+
+**Setup & Build:**
+1. Open a terminal (e.g., PowerShell) and navigate to the project directory.
+2. Create a build directory:
+   ```
+   mkdir build
+   cd build
+   ```
+3. Run CMake to configure the project:
+   ```
+   cmake ..
+   ```
+   (This will automatically download and configure GLFW and GLAD.)
+4. Build the project:
+   ```
+   cmake --build .
+   ```
+   The executable will be created in the `build/Debug` or `build/Release` folder (depending on your configuration).
+
+**Run the Application:**
+1. Navigate to the folder containing `MiniSolarSystem.exe` (usually `build/Debug`):
+   ```
+   cd Debug
+   .\MiniSolarSystem.exe
+   ```
+
+**Controls:**
+- Rotate view: Click and drag with the left mouse button.
+- Zoom in/out: Use the mouse scroll wheel.
